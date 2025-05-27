@@ -760,16 +760,6 @@
   }
 </style>
 
-<div style="position: absolute; width: 1px; height: 1px; overflow: hidden; pointer-events: none;">
-  <iframe 
-    src="https://www.youtube.com/embed/DjMu_4O_EYk?autoplay=1&controls=0&mute=0&loop=1&playlist=DjMu_4O_EYk"
-    frameborder="0" 
-    allow="autoplay"
-    allowfullscreen
-  ></iframe>
-</div>
-
-
 <script>
   function scrollToSection(id) {
     const section = document.getElementById(id);
@@ -863,6 +853,37 @@
       mirror: false       // tidak animasi saat scroll ke atas
     });
   });
+</script>
+
+<div style="position: absolute; width: 1px; height: 1px; overflow: hidden; pointer-events: none; top: 0; left: 0; z-index: -9999;">
+  <iframe 
+    id="ytplayer"
+    src="https://www.youtube.com/embed/DjMu_4O_EYk?autoplay=1&controls=0&mute=0&loop=1&playlist=DjMu_4O_EYk&enablejsapi=1"
+    frameborder="0" 
+    allow="autoplay; encrypted-media"
+    allowfullscreen
+    style="width:1px; height:1px;"
+  ></iframe>
+</div>
+
+<script>
+  // Setup API ready and unmute
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('ytplayer', {
+      events: {
+        'onReady': function(event) {
+          event.target.unMute();  // Pastikan suara nyala
+          event.target.playVideo();
+        }
+      }
+    });
+  }
+
+  // Load YouTube IFrame API script
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 </script>
 
 </body>
