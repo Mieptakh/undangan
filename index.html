@@ -8,6 +8,7 @@
   <meta property="og:description" content="Dengan penuh cinta kami mengundang Anda untuk hadir di hari istimewa kami." />
   <meta property="og:image" content="https://mieptakh.github.io/undangam/foto/WhatsApp Image 2025-05-27 at 08.56.03_7223fa05.jpg" />
   <meta property="og:url" content="https://mieptakh.github.io/undangan" />
+  <link rel="shortcut icon" href="foto/20250320_190104[1].png" type="image/x-icon">
   <title>Abi & Mufida Wedding</title>
 
   <!-- Tailwind CSS CDN -->
@@ -80,7 +81,7 @@
 
   <style>
     html{
-       overflow-y: hidden;
+       overflow-x: hidden;
     }
 
     /* Custom scrollbar */
@@ -146,7 +147,7 @@
 <!-- Page 1: CTA -->
 <section 
   id="welcome-section" 
-  class="h-screen bg-cover bg-center relative z-50" 
+  class="h-screen bg-cover bg-center relative z-50 overflow-hidden" 
   style="background-image: url('foto/WhatsApp Image 2025-05-27 at 08.56.03_7223fa05.jpg');"
 >
   <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center text-center text-white px-4">
@@ -169,6 +170,10 @@
 </section>
 
 <style>
+  body.block-scroll {
+    overflow: hidden;
+  }
+
   @keyframes fadeIn {
     from {opacity: 0; transform: translateY(20px);}
     to {opacity: 1; transform: translateY(0);}
@@ -196,44 +201,42 @@
 
 <script>
   const guestList = {
-  // Tamu wanita
-  mita: "Mita",
-  tsalista: "Tsalista",
-  yani: "Yani Tanggulangin",
-  firly: "Firly Tanggilangin",
-  dilla: "Dilla Panggreh",
-  elta: "Elta",
-  deva: "Deva",
-  mayang: "Mayang",
-  nindi: "Nindi",
-  melda: "Melda",
-  gita: "Gita",
-  risma: "Risma",
-  trya: "Trya",
-  isti: "Isti",
-  rita: "Rita",
-  puput: "Puput",
-
-  // Tamu pria
-  billy: "Billy",
-  amin: "Amin",
-  agung: "Agung",
-  kuseni: "Kuseni",
-  black: "Mas Black",
-  joko: "Mas Joko",
-  adi: "Mas Adi",
-  yusron: "Yusron",
-  adit: "Adit",
-  kiki: "Kiki",
-  abhinaya: "Abhinaya",
-  reihan: "Reihan",
-  ifan: "Ifan",
-  ikrom: "Ikrom",
-  nafis: "Nafis",
-
-  // Spesial
-  dedekpil: "Dedek Pil"
-};
+    mita: "Mita",
+    tsalista: "Tsalista",
+    yani: "Yani Tanggulangin",
+    firly: "Firly Tanggilangin",
+    billy: "Billy",
+    amin: "Amin",
+    dilla: "Dilla Panggreh",
+    agung: "Agung",
+    elta: "Elta",
+    deva: "Deva",
+    mayang: "Mayang",
+    kuseni: "Kuseni",
+    nindi: "Nindi",
+    black: "Mas Black",
+    joko: "Mas Joko",
+    adi: "Mas Adi",
+    melda: "Melda",
+    gita: "Gita",
+    risma: "Risma",
+    trya: "Trya",
+    isti: "Isti",
+    yusron: "Yusron",
+    adit: "Adit",
+    kiki: "Kiki",
+    abhinaya: "Abhinaya",
+    reihan: "Reihan",
+    ifan: "Ifan",
+    ikrom: "Ikrom",
+    rita: "Rita",
+    nafis: "Nafis",
+    puput: "Puput",
+    dedekpil: "Dedek Pil",
+    sindia: "Sindia",
+    jihan: "Jihan",
+    ila: "Ila"
+  };
 
   function getQueryParam(param) {
     const urlParams = new URLSearchParams(window.location.search);
@@ -243,13 +246,24 @@
   function getInvitedName() {
     const guestKey = getQueryParam("to");
     const guestName = guestList[guestKey];
-    const nameToShow = guestName ? guestName : "Saudara/i";
+    const nameToShow = guestName ? guestName : "Undangan Online";
     document.getElementById("invitedName").textContent = `Kepada Yth. ${nameToShow}`;
   }
 
-  window.onload = getInvitedName;
-</script>
+  function goToMain() {
+    document.getElementById('welcome-section').classList.add('hidden');
+    document.getElementById('mainContent').classList.remove('hidden');
+    document.body.classList.remove('block-scroll');
+    scrollToSection('countdown');
+    startCountdown();
+  }
 
+  window.onload = function() {
+    getInvitedName();
+    document.body.classList.add('block-scroll'); // Cegah scroll saat welcome-section aktif
+  }
+</script>
+<main>
 <section id="countdown" class="min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-primary-50 to-primary-100 text-center px-4 py-16" data-aos="fade-up">
   <div class="max-w-md mx-auto">
     <h1 class="text-4xl font-great-vibes mb-6 text-primary-700" data-aos="fade-down" data-aos-delay="100">The Wedding of</h1>
@@ -746,6 +760,16 @@
   }
 </style>
 
+<div style="position: absolute; width: 1px; height: 1px; overflow: hidden; pointer-events: none;">
+  <iframe 
+    src="https://www.youtube.com/embed/DjMu_4O_EYk?autoplay=1&controls=0&mute=0&loop=1&playlist=DjMu_4O_EYk"
+    frameborder="0" 
+    allow="autoplay"
+    allowfullscreen
+  ></iframe>
+</div>
+
+
 <script>
   function scrollToSection(id) {
     const section = document.getElementById(id);
@@ -754,6 +778,10 @@
       setActiveButton(id);
     }
   }
+
+  window.addEventListener('click', () => {
+  document.querySelector('iframe').contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+});
 
   function setActiveButton(id) {
     document.querySelectorAll('.nav-btn').forEach(btn => {
