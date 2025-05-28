@@ -11,10 +11,8 @@
   <link rel="shortcut icon" href="foto/20250320_190104[1].png" type="image/x-icon">
   <title>Abi & Mufida Wedding</title>
 
-  <!-- Tailwind CSS CDN -->
-  <!-- AOS JS -->
-<!-- AOS CSS (pastikan sudah di head) -->
-<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <!-- AOS CSS (pastikan sudah di head) -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -203,8 +201,8 @@
   const guestList = {
     mita: "Mita",
     tsalista: "Tsalista",
-    yani: "Yani Tanggulangin",
-    firly: "Firly Tanggilangin",
+    yanitanggulangin: "Yani Tanggulangin",
+    firlytanggilangin: "Firly Tanggilangin",
     billy: "Billy",
     amin: "Amin",
     dilla: "Dilla Panggreh",
@@ -214,9 +212,9 @@
     mayang: "Mayang",
     kuseni: "Kuseni",
     nindi: "Nindi",
-    black: "Mas Black",
-    joko: "Mas Joko",
-    adi: "Mas Adi",
+    masblack: "Mas Black",
+    masjoko: "Mas Joko",
+    masadi: "Mas Adi",
     melda: "Melda",
     gita: "Gita",
     risma: "Risma",
@@ -235,6 +233,10 @@
     dedekpil: "Dedek Pil",
     sindia: "Sindia",
     jihan: "Jihan",
+    ila: "Ila",
+    dita: "Dita",
+    kakyudha: "Kak Yudha",
+    kakputri: "Kak Putri",
     ila: "Ila"
   };
 
@@ -263,395 +265,396 @@
     document.body.classList.add('block-scroll'); // Cegah scroll saat welcome-section aktif
   }
 </script>
+
 <main>
-<section id="countdown" class="min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-primary-50 to-primary-100 text-center px-4 py-16" data-aos="fade-up">
-  <div class="max-w-md mx-auto">
-    <h1 class="text-4xl font-great-vibes mb-6 text-primary-700" data-aos="fade-down" data-aos-delay="100">The Wedding of</h1>
-    <div class="relative mb-8" data-aos="zoom-in" data-aos-delay="200">
-      <img src="foto/WhatsApp Image 2025-05-27 at 08.56.03_7223fa05.jpg" alt="Abi & Mufida" class="w-64 h-64 object-cover rounded-full shadow-lg mx-auto border-4 border-primary-200">
-      <div class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 bg-primary-100 px-6 py-2 rounded-full shadow-md" data-aos="fade-up" data-aos-delay="300">
-        <h2 class="text-xl font-semibold text-primary-800">Abi & Mufida</h2>
+  <section id="countdown" class="min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-primary-50 to-primary-100 text-center px-4 py-16" data-aos="fade-up">
+    <div class="max-w-md mx-auto">
+      <h1 class="text-4xl font-great-vibes mb-6 text-primary-700" data-aos="fade-down" data-aos-delay="100">The Wedding of</h1>
+      <div class="relative mb-8" data-aos="zoom-in" data-aos-delay="200">
+        <img src="foto/WhatsApp Image 2025-05-27 at 08.56.03_7223fa05.jpg" alt="Abi & Mufida" class="w-64 h-64 object-cover rounded-full shadow-lg mx-auto border-4 border-primary-200">
+        <div class="absolute -bottom-4 left-1/2 transform -translate-x-1/2 bg-primary-100 px-6 py-2 rounded-full shadow-md" data-aos="fade-up" data-aos-delay="300">
+          <h2 class="text-xl font-semibold text-primary-800">Abi & Mufida</h2>
+        </div>
+      </div>
+      <p class="text-primary-600 mb-8" data-aos="fade-up" data-aos-delay="400">
+        "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan hidup dari jenismu sendiri, supaya kamu merasa tenteram kepadanya." <br>(QS. Ar-Rum: 21)
+      </p>
+      <div id="timer" class="grid grid-cols-4 gap-2 max-w-xs mx-auto" data-aos="fade-up" data-aos-delay="500">
+        <div class="bg-white p-3 rounded-lg shadow" data-aos="flip-up" data-aos-delay="600">
+          <div id="days" class="text-2xl font-bold text-primary-700">00</div>
+          <div class="text-xs text-primary-500">Hari</div>
+        </div>
+        <div class="bg-white p-3 rounded-lg shadow" data-aos="flip-up" data-aos-delay="700">
+          <div id="hours" class="text-2xl font-bold text-primary-700">00</div>
+          <div class="text-xs text-primary-500">Jam</div>
+        </div>
+        <div class="bg-white p-3 rounded-lg shadow" data-aos="flip-up" data-aos-delay="800">
+          <div id="minutes" class="text-2xl font-bold text-primary-700">00</div>
+          <div class="text-xs text-primary-500">Menit</div>
+        </div>
+        <div class="bg-white p-3 rounded-lg shadow" data-aos="flip-up" data-aos-delay="900">
+          <div id="seconds" class="text-2xl font-bold text-primary-700">00</div>
+          <div class="text-xs text-primary-500">Detik</div>
+        </div>
       </div>
     </div>
-    <p class="text-primary-600 mb-8" data-aos="fade-up" data-aos-delay="400">
-      "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan hidup dari jenismu sendiri, supaya kamu merasa tenteram kepadanya." <br>(QS. Ar-Rum: 21)
-    </p>
-    <div id="timer" class="grid grid-cols-4 gap-2 max-w-xs mx-auto" data-aos="fade-up" data-aos-delay="500">
-      <div class="bg-white p-3 rounded-lg shadow" data-aos="flip-up" data-aos-delay="600">
-        <div id="days" class="text-2xl font-bold text-primary-700">00</div>
-        <div class="text-xs text-primary-500">Hari</div>
-      </div>
-      <div class="bg-white p-3 rounded-lg shadow" data-aos="flip-up" data-aos-delay="700">
-        <div id="hours" class="text-2xl font-bold text-primary-700">00</div>
-        <div class="text-xs text-primary-500">Jam</div>
-      </div>
-      <div class="bg-white p-3 rounded-lg shadow" data-aos="flip-up" data-aos-delay="800">
-        <div id="minutes" class="text-2xl font-bold text-primary-700">00</div>
-        <div class="text-xs text-primary-500">Menit</div>
-      </div>
-      <div class="bg-white p-3 rounded-lg shadow" data-aos="flip-up" data-aos-delay="900">
-        <div id="seconds" class="text-2xl font-bold text-primary-700">00</div>
-        <div class="text-xs text-primary-500">Detik</div>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
-<script>
-  function startCountdown() {
-    const weddingDate = new Date('May 30, 2025 19:00:00').getTime();
-    
-    const timer = setInterval(function() {
-      const now = new Date().getTime();
-      const distance = weddingDate - now;
+  <script>
+    function startCountdown() {
+      const weddingDate = new Date('May 30, 2025 19:00:00').getTime();
       
-      if (distance < 0) {
-        clearInterval(timer);
-        document.getElementById('timer').innerHTML = '<div class="text-2xl text-primary-700">Acara Pernikahan Telah Berlangsung!</div>';
-        return;
-      }
+      const timer = setInterval(function() {
+        const now = new Date().getTime();
+        const distance = weddingDate - now;
+        
+        if (distance < 0) {
+          clearInterval(timer);
+          document.getElementById('timer').innerHTML = '<div class="text-2xl text-primary-700">Acara Pernikahan Telah Berlangsung!</div>';
+          return;
+        }
 
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      
-      document.getElementById('days').textContent = days.toString().padStart(2, '0');
-      document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
-      document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
-      document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
-    }, 1000);
-  }
-
-  document.addEventListener('DOMContentLoaded', () => {
-    startCountdown();
-    if (typeof AOS !== 'undefined') {
-      AOS.init({ duration: 800, once: true, easing: 'ease-in-out' });
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+        document.getElementById('days').textContent = days.toString().padStart(2, '0');
+        document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+        document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+        document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+      }, 1000);
     }
-  });
-</script>
 
-<section id="couple" class="min-h-screen flex flex-col justify-center items-center bg-primary-100 text-center px-4 py-16" data-aos="fade-up">
-  <div class="max-w-md mx-auto">
+    document.addEventListener('DOMContentLoaded', () => {
+      startCountdown();
+      if (typeof AOS !== 'undefined') {
+        AOS.init({ duration: 800, once: true, easing: 'ease-in-out' });
+      }
+    });
+  </script>
 
-    <h2 class="text-3xl font-great-vibes text-primary-700 mb-10" data-aos="fade-down" data-aos-delay="100">
-      Pasangan Pengantin
-    </h2>
+  <section id="couple" class="min-h-screen flex flex-col justify-center items-center bg-primary-100 text-center px-4 py-16" data-aos="fade-up">
+    <div class="max-w-md mx-auto">
 
-    <!-- Abi -->
-    <div class="mb-8" data-aos="fade-right" data-aos-delay="200">
-      <p class="text-4xl font-great-vibes text-primary-600 mb-2">Mokhammad Abi Dullah Mukmin</p>
-      <p class="text-sm text-primary-500 italic">Putra dari</p>
-      <p class="text-base text-primary-600">Bapak Buamat & Ibu Puji Astutik</p>
-    </div>
+      <h2 class="text-3xl font-great-vibes text-primary-700 mb-10" data-aos="fade-down" data-aos-delay="100">
+        Pasangan Pengantin
+      </h2>
 
-    <!-- Icon & -->
-    <div class="my-4" data-aos="zoom-in" data-aos-delay="300">
-      <span class="text-5xl text-primary-400 font-great-vibes">&</span>
-    </div>
-
-    <!-- Mufida -->
-    <div class="mb-8" data-aos="fade-left" data-aos-delay="400">
-      <p class="text-4xl font-great-vibes text-primary-600 mb-2">Mufidatul Alawiyah</p>
-      <p class="text-sm text-primary-500 italic">Putri dari</p>
-      <p class="text-base text-primary-600">Bapak Jayadi (Alm) & Ibu Niswatin</p>
-    </div>
-
-    <!-- Narasi Undangan -->
-    <div class="mt-10 bg-white p-6 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="500">
-      <p class="text-sm text-primary-600 leading-relaxed mb-4">
-        Dengan penuh syukur dan kasih, kami mengundang Anda untuk turut hadir dan menjadi saksi
-        atas awal perjalanan cinta kami.
-      </p>
-      <p class="text-sm text-primary-600 leading-relaxed mb-4">
-        Sebuah ikatan suci yang dipersatukan oleh cinta, doa, dan restu dari keluarga serta orang-orang terkasih.
-      </p>
-      <p class="text-base text-primary-700 font-semibold italic">Abi & Mufida</p>
-    </div>
-
-  </div>
-</section>
-
-
-<section id="lovestory" class="bg-gradient-to-b from-primary-100 py-16 px-6 md:px-12">
-  <div class="text-center mb-12">
-    <h2 class="text-3xl md:text-4xl font-semibold text-green-700 font-serif">Love Story</h2>
-    <p class="text-gray-600 mt-2">Perjalanan cinta singkat kami yang penuh makna</p>
-  </div>
-
-  <div class="space-y-12 max-w-3xl mx-auto">
-    
-    <!-- 2019 -->
-    <div class="flex flex-col md:flex-row items-start md:items-center gap-6">
-      <div class="text-5xl text-green-600 font-bold">2019</div>
-      <div>
-        <h3 class="text-xl font-semibold text-gray-800 mb-2">First Meet</h3>
-        <p class="text-gray-600">
-          Bertemu di dalam satu organisasi yaitu Dewan Kerja Ambalan Pramuka. Kala itu dia si jahil yang selalu bikin saya gregetan.
-        </p>
+      <!-- Abi -->
+      <div class="mb-8" data-aos="fade-right" data-aos-delay="200">
+        <p class="text-4xl font-great-vibes text-primary-600 mb-2">Mokhammad Abi Dullah Mukmin</p>
+        <p class="text-sm text-primary-500 italic">Putra dari</p>
+        <p class="text-base text-primary-600">Bapak Buamat & Ibu Puji Astutik</p>
       </div>
-    </div>
 
-    <!-- 2020 -->
-    <div class="flex flex-col md:flex-row items-start md:items-center gap-6">
-      <div class="text-5xl text-green-600 font-bold">2020</div>
-      <div>
-        <h3 class="text-xl font-semibold text-gray-800 mb-2">Relationship</h3>
-        <p class="text-gray-600">
-          Di akhir 2019 kita memutuskan untuk saling bertukar fikiran, saling curhat ini itu dan saling nyaman satu sama lain. Namun hubungannya tidak berjalan lama, pada akhirnya di hari setelah kelulusan sekolah kita putus.
-        </p>
+      <!-- Icon & -->
+      <div class="my-4" data-aos="zoom-in" data-aos-delay="300">
+        <span class="text-5xl text-primary-400 font-great-vibes">&</span>
       </div>
-    </div>
 
-    <!-- 2024 -->
-    <div class="flex flex-col md:flex-row items-start md:items-center gap-6">
-      <div class="text-5xl text-green-600 font-bold">2024</div>
-      <div>
-        <h3 class="text-xl font-semibold text-gray-800 mb-2">Engagement</h3>
-        <p class="text-gray-600">
-          Setelah sekian tahun tidak bersama, di tahun inilah dia datang untuk menunjukkan keseriusannya.
-        </p>
+      <!-- Mufida -->
+      <div class="mb-8" data-aos="fade-left" data-aos-delay="400">
+        <p class="text-4xl font-great-vibes text-primary-600 mb-2">Mufidatul Alawiyah</p>
+        <p class="text-sm text-primary-500 italic">Putri dari</p>
+        <p class="text-base text-primary-600">Bapak Jayadi (Alm) & Ibu Niswatin</p>
       </div>
-    </div>
 
-    <!-- 2025 -->
-    <div class="flex flex-col md:flex-row items-start md:items-center gap-6">
-      <div class="text-5xl text-green-600 font-bold">2025</div>
-      <div>
-        <h3 class="text-xl font-semibold text-gray-800 mb-2">Married</h3>
-        <p class="text-gray-600">
-          And finally, kita sama-sama bisa melewati setiap halang rintang yang mungkin tidak banyak orang tau.
+      <!-- Narasi Undangan -->
+      <div class="mt-10 bg-white p-6 rounded-xl shadow-md" data-aos="fade-up" data-aos-delay="500">
+        <p class="text-sm text-primary-600 leading-relaxed mb-4">
+          Dengan penuh syukur dan kasih, kami mengundang Anda untuk turut hadir dan menjadi saksi
+          atas awal perjalanan cinta kami.
         </p>
+        <p class="text-sm text-primary-600 leading-relaxed mb-4">
+          Sebuah ikatan suci yang dipersatukan oleh cinta, doa, dan restu dari keluarga serta orang-orang terkasih.
+        </p>
+        <p class="text-base text-primary-700 font-semibold italic">Abi & Mufida</p>
       </div>
+
     </div>
-    
-  </div>
-</section>
+  </section>
 
-<section id="schedule" class="min-h-screen flex flex-col justify-center items-center bg-primary-50 text-center px-4 py-16">
-  <div class="max-w-md mx-auto">
-    <h2 class="text-3xl font-great-vibes mb-8 text-primary-700" data-aos="fade-up">Acara Pernikahan</h2>
 
-    <div class="space-y-8">
+  <section id="lovestory" class="bg-gradient-to-b from-primary-100 py-16 px-6 md:px-12">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-semibold text-green-700 font-serif">Love Story</h2>
+      <p class="text-gray-600 mt-2">Perjalanan cinta singkat kami yang penuh makna</p>
+    </div>
+
+    <div class="space-y-12 max-w-3xl mx-auto">
       
-      <!-- Akad Nikah -->
-      <div class="bg-white p-6 rounded-lg shadow-md relative overflow-hidden" data-aos="fade-right" data-aos-delay="100">
-        <div class="absolute top-0 left-0 w-full h-1 bg-primary-400"></div>
-        <h3 class="text-xl font-semibold text-primary-800 mb-4">
-          <i class="fas fa-ring text-primary-500 mr-2"></i>Akad Nikah
-        </h3>
-        <p class="text-primary-600 mb-1">
-          <i class="fas fa-calendar-alt mr-2"></i>Jum'at, 30 Mei 2025
-        </p>
-        <p class="text-primary-600 mb-3">
-          <i class="fas fa-clock mr-2"></i>19:00  WIB
-        </p>
-        <p class="text-sm text-primary-500 mb-4">
-          <i class="fas fa-map-marker-alt mr-2"></i>Dsn Buaran RT 03 RW 09, Keboguyang, Jabon, Sidoarjo
-        </p>
-        <a 
-          href="https://maps.app.goo.gl/YwDCpXQZVbchUzBG6" 
-          target="_blank" 
-          class="inline-block px-4 py-2 bg-primary-600 text-white rounded-full text-sm hover:bg-primary-700 transition-colors duration-300"
-        >
-          <i class="fas fa-map mr-2"></i>Lihat Lokasi Akad
-        </a>
+      <!-- 2019 -->
+      <div class="flex flex-col md:flex-row items-start md:items-center gap-6">
+        <div class="text-5xl text-green-600 font-bold">2019</div>
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">First Meet</h3>
+          <p class="text-gray-600">
+            Bertemu di dalam satu organisasi yaitu Dewan Kerja Ambalan Pramuka. Kala itu dia si jahil yang selalu bikin saya gregetan.
+          </p>
+        </div>
       </div>
 
-      <!-- Resepsi -->
-      <div class="bg-white p-6 rounded-lg shadow-md relative overflow-hidden" data-aos="fade-left" data-aos-delay="300">
-        <div class="absolute top-0 left-0 w-full h-1 bg-secondary-400"></div>
-        <h3 class="text-xl font-semibold text-primary-800 mb-4">
-          <i class="fas fa-glass-cheers text-secondary-500 mr-2"></i>Resepsi Pernikahan
-        </h3>
-        <p class="text-primary-600 mb-1">
-          <i class="fas fa-calendar-alt mr-2"></i>Sabtu, 31 Mei 2025
-        </p>
-        <p class="text-primary-600 mb-3">
-          <i class="fas fa-clock mr-2"></i>Bebas
-        </p>
-        <p class="text-sm text-primary-500 mb-4">
-          <i class="fas fa-map-marker-alt mr-2"></i>Dsn Buaran RT 03 RW 09 keboguyang Jabon Sidoarjo 
-        </p>
-        <a 
-          href="https://maps.app.goo.gl/YwDCpXQZVbchUzBG6" 
-          target="_blank" 
-          class="inline-block px-4 py-2 bg-secondary-500 text-white rounded-full text-sm hover:bg-secondary-600 transition-colors duration-300"
-        >
-          <i class="fas fa-map mr-2"></i>Lihat Lokasi Resepsi
-        </a>
+      <!-- 2020 -->
+      <div class="flex flex-col md:flex-row items-start md:items-center gap-6">
+        <div class="text-5xl text-green-600 font-bold">2020</div>
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Relationship</h3>
+          <p class="text-gray-600">
+            Di akhir 2019 kita memutuskan untuk saling bertukar fikiran, saling curhat ini itu dan saling nyaman satu sama lain. Namun hubungannya tidak berjalan lama, pada akhirnya di hari setelah kelulusan sekolah kita putus.
+          </p>
+        </div>
       </div>
 
+      <!-- 2024 -->
+      <div class="flex flex-col md:flex-row items-start md:items-center gap-6">
+        <div class="text-5xl text-green-600 font-bold">2024</div>
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Engagement</h3>
+          <p class="text-gray-600">
+            Setelah sekian tahun tidak bersama, di tahun inilah dia datang untuk menunjukkan keseriusannya.
+          </p>
+        </div>
+      </div>
+
+      <!-- 2025 -->
+      <div class="flex flex-col md:flex-row items-start md:items-center gap-6">
+        <div class="text-5xl text-green-600 font-bold">2025</div>
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Married</h3>
+          <p class="text-gray-600">
+            And finally, kita sama-sama bisa melewati setiap halang rintang yang mungkin tidak banyak orang tau.
+          </p>
+        </div>
+      </div>
+      
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="gallery" class="min-h-screen flex flex-col justify-center items-center bg-primary-100 px-4 py-16">
-  <div class="max-w-md mx-auto w-full">
-    <h2 class="text-3xl font-great-vibes mb-8 text-center text-primary-700" data-aos="fade-up">Galeri Kami</h2>
+  <section id="schedule" class="min-h-screen flex flex-col justify-center items-center bg-primary-50 text-center px-4 py-16">
+    <div class="max-w-md mx-auto">
+      <h2 class="text-3xl font-great-vibes mb-8 text-primary-700" data-aos="fade-up">Acara Pernikahan</h2>
 
-    <div class="glide" data-aos="zoom-in" data-aos-delay="200">
-      <div class="glide__track" data-glide-el="track">
-        <ul class="glide__slides">
-          <li class="glide__slide">
-            <img src="foto/WhatsApp Image 2025-05-27 at 08.56.03_7223fa05.jpg" class="w-full h-64 object-cover rounded-lg shadow-md" alt="Photo 1" />
-          </li>
-          <li class="glide__slide">
-            <img src="foto/WhatsApp Image 2025-05-27 at 08.56.03_a266ac1a.jpg" class="w-full h-64 object-cover rounded-lg shadow-md" alt="Photo 2" />
-          </li>
-          <li class="glide__slide">
-            <img src="foto/WhatsApp Image 2025-05-27 at 08.56.04_727355d4.jpg" class="w-full h-64 object-cover rounded-lg shadow-md" alt="Photo 3" />
-          </li>
-        </ul>
-      </div>
+      <div class="space-y-8">
+        
+        <!-- Akad Nikah -->
+        <div class="bg-white p-6 rounded-lg shadow-md relative overflow-hidden" data-aos="fade-right" data-aos-delay="100">
+          <div class="absolute top-0 left-0 w-full h-1 bg-primary-400"></div>
+          <h3 class="text-xl font-semibold text-primary-800 mb-4">
+            <i class="fas fa-ring text-primary-500 mr-2"></i>Akad Nikah
+          </h3>
+          <p class="text-primary-600 mb-1">
+            <i class="fas fa-calendar-alt mr-2"></i>Jum'at, 30 Mei 2025
+          </p>
+          <p class="text-primary-600 mb-3">
+            <i class="fas fa-clock mr-2"></i>19:00  WIB
+          </p>
+          <p class="text-sm text-primary-500 mb-4">
+            <i class="fas fa-map-marker-alt mr-2"></i>Dsn Buaran RT 03 RW 09, Keboguyang, Jabon, Sidoarjo
+          </p>
+          <a 
+            href="https://maps.app.goo.gl/YwDCpXQZVbchUzBG6" 
+            target="_blank" 
+            class="inline-block px-4 py-2 bg-primary-600 text-white rounded-full text-sm hover:bg-primary-700 transition-colors duration-300"
+          >
+            <i class="fas fa-map mr-2"></i>Lihat Lokasi Akad
+          </a>
+        </div>
 
-      <div class="glide__arrows" data-glide-el="controls">
-        <button class="glide__arrow glide__arrow--left" data-glide-dir="<" aria-label="Previous slide"><i class="fas fa-chevron-left"></i></button>
-        <button class="glide__arrow glide__arrow--right" data-glide-dir=">" aria-label="Next slide"><i class="fas fa-chevron-right"></i></button>
-      </div>
+        <!-- Resepsi -->
+        <div class="bg-white p-6 rounded-lg shadow-md relative overflow-hidden" data-aos="fade-left" data-aos-delay="300">
+          <div class="absolute top-0 left-0 w-full h-1 bg-secondary-400"></div>
+          <h3 class="text-xl font-semibold text-primary-800 mb-4">
+            <i class="fas fa-glass-cheers text-secondary-500 mr-2"></i>Resepsi Pernikahan
+          </h3>
+          <p class="text-primary-600 mb-1">
+            <i class="fas fa-calendar-alt mr-2"></i>Sabtu, 31 Mei 2025
+          </p>
+          <p class="text-primary-600 mb-3">
+            <i class="fas fa-clock mr-2"></i>Bebas
+          </p>
+          <p class="text-sm text-primary-500 mb-4">
+            <i class="fas fa-map-marker-alt mr-2"></i>Dsn Buaran RT 03 RW 09 keboguyang Jabon Sidoarjo 
+          </p>
+          <a 
+            href="https://maps.app.goo.gl/YwDCpXQZVbchUzBG6" 
+            target="_blank" 
+            class="inline-block px-4 py-2 bg-secondary-500 text-white rounded-full text-sm hover:bg-secondary-600 transition-colors duration-300"
+          >
+            <i class="fas fa-map mr-2"></i>Lihat Lokasi Resepsi
+          </a>
+        </div>
 
-      <div class="glide__bullets" data-glide-el="controls[nav]">
-        <button class="glide__bullet" data-glide-dir="=0" aria-label="Slide 1"></button>
-        <button class="glide__bullet" data-glide-dir="=1" aria-label="Slide 2"></button>
-        <button class="glide__bullet" data-glide-dir="=2" aria-label="Slide 3"></button>
       </div>
     </div>
+  </section>
 
-    <div class="mt-8 text-center" data-aos="fade-up" data-aos-delay="400">
-      <p class="text-primary-600">Bagikan momen bahagia kami dengan tagar</p>
-      <p class="font-semibold text-primary-800 mt-2">#AbiMufida2025</p>
+  <section id="gallery" class="min-h-screen flex flex-col justify-center items-center bg-primary-100 px-4 py-16">
+    <div class="max-w-md mx-auto w-full">
+      <h2 class="text-3xl font-great-vibes mb-8 text-center text-primary-700" data-aos="fade-up">Galeri Kami</h2>
+
+      <div class="glide" data-aos="zoom-in" data-aos-delay="200">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <img src="foto/WhatsApp Image 2025-05-27 at 08.56.03_7223fa05.jpg" class="w-full h-64 object-cover rounded-lg shadow-md" alt="Photo 1" />
+            </li>
+            <li class="glide__slide">
+              <img src="foto/WhatsApp Image 2025-05-27 at 08.56.03_a266ac1a.jpg" class="w-full h-64 object-cover rounded-lg shadow-md" alt="Photo 2" />
+            </li>
+            <li class="glide__slide">
+              <img src="foto/WhatsApp Image 2025-05-27 at 08.56.04_727355d4.jpg" class="w-full h-64 object-cover rounded-lg shadow-md" alt="Photo 3" />
+            </li>
+          </ul>
+        </div>
+
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<" aria-label="Previous slide"><i class="fas fa-chevron-left"></i></button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">" aria-label="Next slide"><i class="fas fa-chevron-right"></i></button>
+        </div>
+
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+          <button class="glide__bullet" data-glide-dir="=0" aria-label="Slide 1"></button>
+          <button class="glide__bullet" data-glide-dir="=1" aria-label="Slide 2"></button>
+          <button class="glide__bullet" data-glide-dir="=2" aria-label="Slide 3"></button>
+        </div>
+      </div>
+
+      <div class="mt-8 text-center" data-aos="fade-up" data-aos-delay="400">
+        <p class="text-primary-600">Bagikan momen bahagia kami dengan tagar</p>
+        <p class="font-semibold text-primary-800 mt-2">#AbiMufida2025</p>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<style>
-  /* Pastikan glide kontainer full width di hp kecil */
-  .glide {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-  }
+  <style>
+    /* Pastikan glide kontainer full width di hp kecil */
+    .glide {
+      width: 100%;
+      max-width: 100%;
+      margin: 0 auto;
+    }
 
-  /* Glide slides responsive */
-  .glide__slide img {
-    width: 100%;
-    height: auto; /* biar proporsional */
-    max-height: 16rem; /* 64 * 4px = 256px */
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    object-fit: cover;
-  }
-
-  /* Glide arrows posisinya responsif dan mudah dijangkau */
-  .glide__arrows {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1rem;
-  }
-  .glide__arrow {
-    background: #3B7A57; /* hijau kalem */
-    color: white;
-    border: none;
-    padding: 0.5rem 0.75rem;
-    border-radius: 9999px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-size: 1.25rem;
-  }
-  .glide__arrow:hover,
-  .glide__arrow:focus {
-    background: #2F6B44;
-    outline: none;
-  }
-
-  /* Glide bullets */
-  .glide__bullets {
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-  }
-  .glide__bullet {
-    width: 12px;
-    height: 12px;
-    background-color: #A3C4A1; /* hijau muda */
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    border: none;
-  }
-  .glide__bullet:hover,
-  .glide__bullet:focus {
-    background-color: #6B8E23; /* hijau lebih gelap */
-    outline: none;
-  }
-  .glide__bullet--active {
-    background-color: #3B7A57; /* hijau kalem */
-  }
-
-  /* Responsive adjustments */
-  @media (max-width: 480px) {
+    /* Glide slides responsive */
     .glide__slide img {
-      max-height: 12rem; /* lebih kecil di hp sangat kecil */
+      width: 100%;
+      height: auto; /* biar proporsional */
+      max-height: 16rem; /* 64 * 4px = 256px */
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      object-fit: cover;
+    }
+
+    /* Glide arrows posisinya responsif dan mudah dijangkau */
+    .glide__arrows {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1rem;
     }
     .glide__arrow {
-      font-size: 1rem;
-      padding: 0.4rem 0.6rem;
+      background: #3B7A57; /* hijau kalem */
+      color: white;
+      border: none;
+      padding: 0.5rem 0.75rem;
+      border-radius: 9999px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      font-size: 1.25rem;
     }
+    .glide__arrow:hover,
+    .glide__arrow:focus {
+      background: #2F6B44;
+      outline: none;
+    }
+
+    /* Glide bullets */
     .glide__bullets {
-      gap: 0.4rem;
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
     }
     .glide__bullet {
-      width: 10px;
-      height: 10px;
+      width: 12px;
+      height: 12px;
+      background-color: #A3C4A1; /* hijau muda */
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      border: none;
     }
-  }
-</style>
+    .glide__bullet:hover,
+    .glide__bullet:focus {
+      background-color: #6B8E23; /* hijau lebih gelap */
+      outline: none;
+    }
+    .glide__bullet--active {
+      background-color: #3B7A57; /* hijau kalem */
+    }
 
-<script>
-  // Inisialisasi Glide.js
-  document.addEventListener('DOMContentLoaded', () => {
-    if (typeof Glide === 'function') {
-      new Glide('.glide', {
-        type: 'carousel',
-        startAt: 0,
-        perView: 1,
-        gap: 16,
-        animationDuration: 400,
-        animationTimingFunc: 'ease-in-out',
-        hoverpause: true,
-        keyboard: true,
-      }).mount();
+    /* Responsive adjustments */
+    @media (max-width: 480px) {
+      .glide__slide img {
+        max-height: 12rem; /* lebih kecil di hp sangat kecil */
+      }
+      .glide__arrow {
+        font-size: 1rem;
+        padding: 0.4rem 0.6rem;
+      }
+      .glide__bullets {
+        gap: 0.4rem;
+      }
+      .glide__bullet {
+        width: 10px;
+        height: 10px;
+      }
     }
-  });
-</script>
+  </style>
+
+  <script>
+    // Inisialisasi Glide.js
+    document.addEventListener('DOMContentLoaded', () => {
+      if (typeof Glide === 'function') {
+        new Glide('.glide', {
+          type: 'carousel',
+          startAt: 0,
+          perView: 1,
+          gap: 16,
+          animationDuration: 400,
+          animationTimingFunc: 'ease-in-out',
+          hoverpause: true,
+          keyboard: true,
+        }).mount();
+      }
+    });
+  </script>
 
   <!-- Gift -->
-<section id="gift" class="min-h-screen flex flex-col justify-center items-center bg-primary-50 text-center px-4 py-16" data-aos="fade-up">
-  <div class="max-w-md mx-auto bg-white p-8 rounded-lg shadow-md" data-aos="zoom-in" data-aos-delay="100">
-    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4" data-aos="fade-down" data-aos-delay="200">
-      <i class="fas fa-gift text-2xl text-primary-600"></i>
-    </div>
-    <h2 class="text-2xl font-semibold text-primary-700 mb-6" data-aos="fade-down" data-aos-delay="300">Kirim Hadiah</h2>
+  <section id="gift" class="min-h-screen flex flex-col justify-center items-center bg-primary-50 text-center px-4 py-16" data-aos="fade-up">
+    <div class="max-w-md mx-auto bg-white p-8 rounded-lg shadow-md" data-aos="zoom-in" data-aos-delay="100">
+      <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4" data-aos="fade-down" data-aos-delay="200">
+        <i class="fas fa-gift text-2xl text-primary-600"></i>
+      </div>
+      <h2 class="text-2xl font-semibold text-primary-700 mb-6" data-aos="fade-down" data-aos-delay="300">Kirim Hadiah</h2>
 
-    <div class="space-y-4 text-left" data-aos="fade-up" data-aos-delay="400">
-      <div class="bg-primary-50 p-4 rounded-lg" data-aos="fade-right" data-aos-delay="500">
-        <h3 class="font-medium text-primary-700 mb-1">Bank BCA</h3>
-        <p class="text-primary-600">3151428001</p>
-        <p class="text-sm text-primary-500">a.n Mufidatul Alawiyah</p>
+      <div class="space-y-4 text-left" data-aos="fade-up" data-aos-delay="400">
+        <div class="bg-primary-50 p-4 rounded-lg" data-aos="fade-right" data-aos-delay="500">
+          <h3 class="font-medium text-primary-700 mb-1">Bank BCA</h3>
+          <p class="text-primary-600">3151428001</p>
+          <p class="text-sm text-primary-500">a.n Mufidatul Alawiyah</p>
+        </div>
+
       </div>
 
+      <button onclick="copyRek()" class="mt-6 bg-primary-600 text-white px-6 py-2 rounded-full hover:bg-primary-700 transition-colors duration-300 flex items-center mx-auto" data-aos="zoom-in" data-aos-delay="700">
+        <i class="far fa-copy mr-2"></i> Salin Nomor Rekening
+      </button>
+
+      <p class="mt-6 text-sm text-primary-500" data-aos="fade-up" data-aos-delay="800">
+        Doa restu Anda merupakan karunia yang sangat berarti bagi kami. Namun jika ingin memberikan hadiah, kami dengan senang hati menerimanya.
+      </p>
     </div>
-
-    <button onclick="copyRek()" class="mt-6 bg-primary-600 text-white px-6 py-2 rounded-full hover:bg-primary-700 transition-colors duration-300 flex items-center mx-auto" data-aos="zoom-in" data-aos-delay="700">
-      <i class="far fa-copy mr-2"></i> Salin Nomor Rekening
-    </button>
-
-    <p class="mt-6 text-sm text-primary-500" data-aos="fade-up" data-aos-delay="800">
-      Doa restu Anda merupakan karunia yang sangat berarti bagi kami. Namun jika ingin memberikan hadiah, kami dengan senang hati menerimanya.
-    </p>
-  </div>
-</section>
+  </section>
 
 <!-- Closing -->
 <section id="closing" class="min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-primary-100 to-primary-200 text-center px-4 py-16" data-aos="fade-up">
